@@ -1,0 +1,162 @@
+﻿.field-validation-error
+{
+    color: #ff0000;
+
+}
+.field-validation-valid
+{
+    display : none;
+}
+.input-validation-error 
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+
+}
+.validation-summary-errors 
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+.validation-summary-valid
+{
+    display: none;
+}
+.bodyRegister {
+    background-size: 1500px;
+    background-position-y: 110px;
+    font-family: 'Comic Sans MS';
+}
+
+.register-container {
+    margin-left: 500px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.validation-summary {
+    color: red;
+}
+
+.register-fieldset {
+    width: 470px;
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+    .register-fieldset legend {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+.button-group input[type="submit"],
+.button-group input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.login-link {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.bodyLogon {
+    background-size: 1500px;
+    background-position-y: 110px;
+    font-family: 'Comic Sans MS';
+}
+
+.login-container {
+    margin-left: 500px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.validation-summary {
+    color: red;
+}
+
+.login-fieldset {
+    width: 500px;
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+    .login-fieldset legend {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+.button-group input[type="submit"],
+.button-group input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.register-link {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+
+
+
+

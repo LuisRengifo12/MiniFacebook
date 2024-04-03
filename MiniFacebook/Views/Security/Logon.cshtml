@@ -1,0 +1,45 @@
+﻿@model MiniFacebook.ViewModels.LogonViewModel
+@{
+    ViewBag.Title = "Logon";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+<body class="bodyLogon">
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="~/Content/Imagen/images.png" alt="MF LOGO" />
+        </div>
+        <div class="validation-summary">
+            @Html.ValidationSummary()
+        </div>
+
+        <fieldset class="login-fieldset">
+            <legend>Iniciar Sesión</legend>
+            @using (Html.BeginForm())
+            {
+                <div class="input-group">
+                    @Html.LabelFor(model => model.nombre, "Nombre: ")
+                    @Html.TextBoxFor(model => model.nombre)
+                </div>
+                <div class="input-group">
+                    @Html.LabelFor(model => model.contraseña, "Contraseña: ")
+                    @Html.PasswordFor(model => model.contraseña)
+                </div>
+                <div class="button-group">
+                    <input type="submit" value="Login" class="btn-login" />
+                    <input type="reset" value="Reset" class="btn-reset" />
+                </div>
+            }
+        </fieldset>
+
+        <div class="register-link">
+            @Html.ActionLink("Registrar", "Register");
+        </div>
+    </div>
+</body>
+</html>

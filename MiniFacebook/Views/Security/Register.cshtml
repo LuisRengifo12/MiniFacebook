@@ -1,0 +1,63 @@
+﻿@model MiniFacebook.ViewModels.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Usuario</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+<body class="bodyRegister">
+    <div class="register-container">
+        <div class="logo-container">
+            <img src="~/Content/Imagen/images.png" alt="MF LOGO" />
+        </div>
+        <div class="message">
+            @if (Model != null && !string.IsNullOrWhiteSpace(Model.Mensaje))
+            {
+                <p style="font-weight:bold;">@Model.Mensaje</p>
+            }
+        </div>
+        <div class="validation-summary">
+            @Html.ValidationSummary()
+        </div>
+        <fieldset class="register-fieldset">
+            <legend>Registrar Usuario</legend>
+            @using (Html.BeginForm())
+            {
+                <div class="input-group">
+                    @Html.LabelFor(model => model.Nombre, "Nombre: ")
+                    @Html.TextBoxFor(model => model.Nombre)
+                </div>
+                <div class="input-group">
+                    @Html.LabelFor(model => model.Apellido, "Apellido: ")
+                    @Html.TextBoxFor(model => model.Apellido)
+                </div>
+                <div class="input-group">
+                    @Html.LabelFor(model => model.Email, "Email: ")
+                    @Html.TextBoxFor(model => model.Email)
+                </div>
+                <div class="input-group">
+                    @Html.LabelFor(model => model.Contraseña, "Contraseña: ")
+                    @Html.PasswordFor(model => model.Contraseña)
+                </div>
+                <div class="input-group">
+                    @Html.LabelFor(model => model.ConfirmarContraseña, "Confirmar Contraseña: ")
+                    @Html.PasswordFor(model => model.ConfirmarContraseña)
+                </div>
+                <div class="button-group">
+                    <input type="submit" value="Register" class="btn-register" />
+                    <input type="reset" value="Reset" class="btn-reset" />
+                </div>
+            }
+        </fieldset>
+        <div class="login-link">
+            @Html.ActionLink("Volver a Iniciar Sesión", "Logon")
+        </div>
+    </div>
+</body>
+</html>
